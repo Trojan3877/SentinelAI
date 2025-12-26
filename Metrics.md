@@ -1,15 +1,14 @@
-# 📊 SentinelAI Metrics
+# Sentinel AI — Metrics
 
-## Model
-- LLM: Llama 3 (8B)
-- Precision: FP16
-- Device: NVIDIA GPU
+## Inference
+- Avg Latency (GPU): ~1.3s
+- Throughput: 12 req/min (single GPU)
+- Max Context: 8k tokens
 
-## Performance
-- Avg latency: ~180ms
-- Throughput: ~22 req/sec
-- Error rate: < 0.2%
+## Reliability
+- API uptime target: 99.9%
+- Error rate: < 0.1%
 
 ## Observability
 - Prometheus metrics
-- MLflow tracking
+- MLflow inference logging
