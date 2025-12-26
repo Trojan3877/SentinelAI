@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+slowapi
+python-jose
+passlib[bcrypt]
+torch
+transformers
+accelerate
+mlflow
+prometheus-client
+python-dotenv
