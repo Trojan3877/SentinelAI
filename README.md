@@ -34,6 +34,7 @@ Built to **Big Tech production standards**, not coursework demos.
     API --> MET
     CI --> RENDER
     RENDER --> K8S
+https://github.com/Trojan3877?utm_source=chatgpt.com
 
 🧰 Tech Stack
 Frontend
