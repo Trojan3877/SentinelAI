@@ -1,0 +1,19 @@
+{
+  "name": "AegisAI Inference Automation",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1
+    },
+    {
+      "parameters": {
+        "url": "http://aegisai-api/infer",
+        "method": "POST"
+      },
+      "name": "Call Inference API",
+      "type": "n8n-nodes-base.httpRequest"
+    }
+  ]
+}
