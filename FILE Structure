@@ -15,3 +15,11 @@ SentinelAI/
 │   ├── tsconfig.json
 │   ├── package.json
 │   └── next.config.js
+k8s/
+├── namespace.yaml
+├── backend-deployment.yaml
+├── backend-service.yaml
+├── frontend-deployment.yaml
+├── frontend-service.yaml
+├── gpu-node-selector.yaml
+├── prometheus-service-monitor.yaml
