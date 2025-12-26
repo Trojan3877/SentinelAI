@@ -1,4 +1,4 @@
-# 📊 AegisAI Metrics
+# 📊 SentinelAI Metrics
 
 ## Model
 - LLM: Llama 3 (8B)
