@@ -1,5 +1,5 @@
-SentinelAI <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4258d589-830f-464e-91fe-37408679d879" />
-
+SentinelAI 
+https://chatgpt.com/backend-api/estuary/content?id=file_00000000f924720c81f30139a41c716f&ts=490762&p=fs&cid=1&sig=df2548931e51248bb9dde80b2aa8e105528153ac5e4aaac4ad63a0641f44e61e&v=0
  Production-Grade AI Inference & Monitoring Platform
 
 ![CI](https://github.com/Trojan3877/SentinelAI/actions/workflows/ci.yml/badge.svg)
