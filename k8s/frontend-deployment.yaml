@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentinelai-frontend
+  namespace: sentinelai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sentinelai-frontend
+  template:
+    metadata:
+      labels:
+        app: sentinelai-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: trojan3877/sentinelai-frontend:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NEXT_PUBLIC_API_URL
+              value: "http://sentinelai-backend:8000"
