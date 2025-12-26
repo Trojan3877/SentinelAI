@@ -1,12 +1,7 @@
 services:
   - type: web
-    name: aegisai-api
+    name: sentinel-ai
     env: docker
     plan: gpu
-    dockerfilePath: docker/Dockerfile
     autoDeploy: true
-    envVars:
-      - key: ENV
-        value: production
-      - key: API_KEY_SECRET
-        generateValue: true
+
