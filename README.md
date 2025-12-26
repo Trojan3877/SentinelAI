@@ -22,34 +22,7 @@ Built to **Big Tech production standards**, not coursework demos.
 ---
 
 ## 🧠 System Architecture
-```mermaid
-flowchart TD
-    U[User]
-    FE[Next.js + TypeScript]
-    API[FastAPI]
-    AUTH[Auth + Rate Limit]
-    LLM[Llama 3]
-    GPU[NVIDIA CUDA]
-    ML[MLflow]
-    MET[Prometheus]
-    K8S[Kubernetes]
 
-    U --> FE --> API
-    API --> AUTH --> LLM --> GPU --> K8S
-    API --> ML
-    API --> MET
-flowchart TD
-    U[User / Client]
-    FE[Next.js + TypeScript UI]
-    API[FastAPI Gateway]
-    AUTH[Auth + Rate Limiter]
-    LLM[Llama 3 CUDA Inference]
-    ML[MLflow Tracking]
-    MET[Prometheus Metrics]
-    GPU[NVIDIA GPU Node]
-    K8S[Kubernetes Cluster]
-    CI[GitHub Actions CI/CD]
-    RENDER[Render Deployment]
 
     U --> FE
     FE --> API
