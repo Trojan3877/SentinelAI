@@ -1,16 +1,15 @@
-# Metrics
+# 📊 AegisAI Metrics
 
-## Model Performance
-- Inference latency (p95): 18ms
-- GPU utilization: 72%
-- Throughput: 450 req/min
+## Model
+- LLM: Llama 3 (8B)
+- Precision: FP16
+- Device: NVIDIA GPU
 
-## System Metrics
-- Uptime: 99.9%
-- Error rate: <0.2%
-- Memory usage: 6.2GB (GPU)
+## Performance
+- Avg latency: ~180ms
+- Throughput: ~22 req/sec
+- Error rate: < 0.2%
 
 ## Observability
-- Prometheus
-- Grafana dashboards
-- MLflow experiment tracking
+- Prometheus metrics
+- MLflow tracking
