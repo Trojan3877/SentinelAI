@@ -1,105 +1,145 @@
-# 🛡️ Sentinel AI — L7 Production AI Inference Platform
+# SentinelAI 🚨  
+### Production-Grade AI Inference & Monitoring Platform
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Production-green)
-![CUDA](https://img.shields.io/badge/NVIDIA-CUDA-success)
-![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
-![MLflow](https://img.shields.io/badge/MLflow-Tracking-orange)
-![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-red)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-success)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![CI](https://github.com/Trojan3877/SentinelAI/actions/workflows/ci.yml/badge.svg)
+![Docker](https://img.shields.io/badge/docker-ready-blue)
+![Kubernetes](https://img.shields.io/badge/kubernetes-orchestrated-blue)
+![CUDA](https://img.shields.io/badge/NVIDIA-CUDA-green)
+![LLM](https://img.shields.io/badge/LLM-Llama%203-orange)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-teal)
+![TypeScript](https://img.shields.io/badge/frontend-TypeScript-blue)
+![MLflow](https://img.shields.io/badge/MLflow-tracking-purple)
+![Prometheus](https://img.shields.io/badge/metrics-Prometheus-red)
+![Level](https://img.shields.io/badge/Portfolio-L7%20Production-success)
 
 ---
 
-## 🔥 Overview
+## 🚀 Overview
+SentinelAI is a **full-stack, GPU-accelerated AI platform** designed for **secure inference, monitoring, and observability** using modern MLOps and platform engineering practices.
 
-**Sentinel AI** is a **production-grade AI inference and observability platform** designed for **GPU-accelerated Large Language Model (LLM) workloads**.
-
-Built using **FastAPI, NVIDIA CUDA, Llama 3, MLflow, Prometheus, Docker, Render, and n8n**, Sentinel AI demonstrates **L7-level system design** aligned with Big Tech and Big AI engineering standards.
-
-This project emphasizes:
-- Reliability
-- Monitoring-first architecture
-- Secure, scalable inference
-- Cloud + GPU deployment readiness
+Built to **Big Tech production standards**, not coursework demos.
 
 ---
 
 ## 🧠 System Architecture
+```mermaid
+flowchart TD
+    U[User]
+    FE[Next.js + TypeScript]
+    API[FastAPI]
+    AUTH[Auth + Rate Limit]
+    LLM[Llama 3]
+    GPU[NVIDIA CUDA]
+    ML[MLflow]
+    MET[Prometheus]
+    K8S[Kubernetes]
 
-![Sentinel AI Architecture](assets/sentinel_ai_system_architecture.png)
+    U --> FE --> API
+    API --> AUTH --> LLM --> GPU --> K8S
+    API --> ML
+    API --> MET
+flowchart TD
+    U[User / Client]
+    FE[Next.js + TypeScript UI]
+    API[FastAPI Gateway]
+    AUTH[Auth + Rate Limiter]
+    LLM[Llama 3 CUDA Inference]
+    ML[MLflow Tracking]
+    MET[Prometheus Metrics]
+    GPU[NVIDIA GPU Node]
+    K8S[Kubernetes Cluster]
+    CI[GitHub Actions CI/CD]
+    RENDER[Render Deployment]
 
----
+    U --> FE
+    FE --> API
+    API --> AUTH
+    AUTH --> LLM
+    LLM --> GPU
+    GPU --> K8S
+    API --> ML
+    API --> MET
+    CI --> RENDER
+    RENDER --> K8S
 
-## ⚙️ Tech Stack
+🧰 Tech Stack
+Frontend
 
-### Backend & AI
-- **FastAPI** – High-performance API layer
-- **Python 3.11**
-- **Meta Llama 3 (8B)** – GPU-accelerated inference
-- **PyTorch + Transformers**
+Next.js (TypeScript)
 
-### Infrastructure
-- **Docker (CUDA-enabled)**
-- **Render GPU deployment**
-- **NVIDIA CUDA Runtime**
+Tailwind CSS
 
-### Observability & Ops
-- **MLflow** – Experiment & inference tracking
-- **Prometheus** – Metrics & monitoring
-- **n8n** – AI workflow automation
+Streamlit (Live Metrics Dashboard)
 
-### Security
-- OAuth2 + JWT authentication
-- Rate limiting (SlowAPI)
+Backend
 
----
+FastAPI
 
-## 🚀 Quick Start
+Llama 3 (CUDA)
 
-```bash
-git clone https://github.com/Trojan3877/Sentinel-AI
-cd Sentinel-AI
+Auth + Rate Limiting
 
-docker build -t sentinel-ai .
-docker run --gpus all -p 8000:8000 sentinel-ai
-http://localhost:8000
+MLflow Experiment Tracking
+
+Infrastructure
+
+Docker
+
+Kubernetes (GPU scheduling)
+
+Prometheus
+
+Render Deployment
+
+GitHub Actions CI/CD
+
+⚡ Quick Start (Local)
+docker compose up --build
 
 
-📈 Production Features
+API → http://localhost:8000
 
-✅ GPU-backed LLM inference
+UI → http://localhost:3000
 
-✅ FastAPI + async architecture
+☸️ Kubernetes Deployment
+kubectl apply -f k8s/
 
-✅ Auth & rate limiting
 
-✅ MLflow experiment tracking
+Supports NVIDIA GPU nodes, metrics scraping, and horizontal scaling.
 
-✅ Prometheus metrics
+🧪 Testing
+pytest tests/
 
-✅ CI/CD ready
 
-✅ Cloud & GPU deployable
+Includes:
 
-🧩 Project Status
+Health checks
 
-Engineering Level: L7 (Senior / Staff-level system design)
+Auth validation
 
-Readiness: Internship, New Grad, Research, MLOps, AI Engineer
+Rate limiting
 
-Target Roles:
+LLM inference validation
 
-AI Engineer
+📊 Observability
 
-ML Engineer
+/metrics → Prometheus
 
-MLOps Engineer
+MLflow UI → experiment tracking
 
-Software Engineer (Backend / Platform)
+Streamlit → live dashboard
+
+🎯 Why SentinelAI
+
+✔ Production-ready
+✔ GPU-accelerated
+✔ Full-stack TypeScript + Python
+✔ MLOps + Platform Engineering
+✔ Recruiter-credible system design
+
 👤 Author
 
 Corey Leath
-Senior Undergraduate — Software Development (Web & Mobile)
-Aspiring AI Engineer | Production ML Systems
+Senior Software Engineering Student
+AI / ML / Platform Engineering
 https://github.com/Trojan3877
