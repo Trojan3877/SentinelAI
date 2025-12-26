@@ -1,0 +1,40 @@
+L7-AI-Platform/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── api/
+│   │   └── App.tsx
+│   ├── tailwind.config.js
+│   ├── index.html
+│   └── package.json
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── api/
+│   │   ├── services/
+│   │   ├── models/
+│   │   └── monitoring/
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── ml/
+│   ├── train.py
+│   ├── inference.py
+│   ├── model.py
+│   └── mlflow_config.yaml
+│
+├── monitoring/
+│   ├── prometheus.yml
+│   └── grafana/
+│
+├── docker-compose.yml
+├── .github/workflows/ci.yml
+│
+├── metrics.md
+├── dailylog.md
+├── contributing.md
+├── README.md
+└── LICENSE
