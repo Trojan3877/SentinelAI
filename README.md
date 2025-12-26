@@ -1,5 +1,6 @@
-# SentinelAI 🚨  
-### Production-Grade AI Inference & Monitoring Platform
+SentinelAI <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4258d589-830f-464e-91fe-37408679d879" />
+
+ Production-Grade AI Inference & Monitoring Platform
 
 ![CI](https://github.com/Trojan3877/SentinelAI/actions/workflows/ci.yml/badge.svg)
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
@@ -14,14 +15,14 @@
 
 ---
 
-## 🚀 Overview
+🚀 Overview
 SentinelAI is a **full-stack, GPU-accelerated AI platform** designed for **secure inference, monitoring, and observability** using modern MLOps and platform engineering practices.
 
 Built to **Big Tech production standards**, not coursework demos.
 
 ---
 
-## 🧠 System Architecture
+🧠 System Architecture
 
 
     U --> FE
