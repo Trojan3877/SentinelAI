@@ -1,20 +1,17 @@
-Sentinel-AI/
-├── app/
-│   ├── main.py
-│   ├── auth.py
-│   └── inference.py
-├── dashboard/
-│   └── app.py
-├── tests/
-│   └── test_api.py
-├── assets/
-│   └── sentinel_ai_system_architecture.png
-├── .github/workflows/
-│   └── ci.yml
-├── Dockerfile
-├── render.yaml
-├── requirements.txt
-├── metrics.md
-├── dailylog.md
-├── contributing.md
-└── README.md
+SentinelAI/
+├── frontend/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── dashboard/page.tsx
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   └── MetricCard.tsx
+│   ├── lib/
+│   │   └── api.ts
+│   ├── styles/
+│   │   └── globals.css
+│   ├── tailwind.config.ts
+│   ├── tsconfig.json
+│   ├── package.json
+│   └── next.config.js
