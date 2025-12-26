@@ -1,17 +1,13 @@
-# Daily Engineering Log
+# Sentinel AI — Daily Engineering Log
 
 ## Day 1
-- Designed system architecture
-- Set up FastAPI GPU inference
+- FastAPI inference endpoint
+- Llama 3 GPU integration
 
 ## Day 2
-- Integrated MLflow
-- Dockerized CUDA backend
+- Streamlit dashboard
+- Prometheus metrics
 
 ## Day 3
-- Added Prometheus + Grafana
-- Frontend dashboard MVP
-
-## Day 4
 - CI/CD pipeline
-- Render GPU deployment
+- Docker + Render configs
