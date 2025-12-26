@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentinelai-backend
+  namespace: sentinelai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sentinelai-backend
+  template:
+    metadata:
+      labels:
+        app: sentinelai-backend
+    spec:
+      containers:
+        - name: backend
+          image: trojan3877/sentinelai-backend:latest
+          ports:
+            - containerPort: 8000
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+          env:
+            - name: MODEL_NAME
+              value: "llama3"
